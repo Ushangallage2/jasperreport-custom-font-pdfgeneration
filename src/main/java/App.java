@@ -7,15 +7,20 @@ import org.apache.commons.io.FileUtils;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.core.io.Resource;
 
+import java.awt.GraphicsEnvironment;
 import java.io.ByteArrayOutputStream;
 import java.io.File;
 
 /**
- * Created by TheGeekyAsian on 11/5/2017.
+
  */
 public class App {
 
-    public static void main (String[] args){
+    public static void main(String[] args) {
+        // 1. Listing all fonts registered in the JVM
+        listAvailableFonts();
+
+        // 2. Generating Jasper Report
         String fileName = "report.pdf";
         File file = new File(fileName);
         Resource resource = new ClassPathResource("reports/jasperReport.jrxml");
@@ -28,15 +33,24 @@ public class App {
             SimpleOutputStreamExporterOutput simpleOutputStreamExporterOutput = new SimpleOutputStreamExporterOutput(bos);
             exporter.setExporterOutput(simpleOutputStreamExporterOutput);
             SimplePdfExporterConfiguration simplePdfExporterConfiguration = new SimplePdfExporterConfiguration();
-            simplePdfExporterConfiguration.setMetadataAuthor("TheGeekyAsian");
+            simplePdfExporterConfiguration.setMetadataAuthor("eleos");
             exporter.setConfiguration(simplePdfExporterConfiguration);
             exporter.exportReport();
             FileUtils.writeByteArrayToFile(file, bos.toByteArray());
             simpleOutputStreamExporterOutput.close();
-        }
-        catch (Exception e){
+            listAvailableFonts();
+        } catch (Exception e) {
             e.printStackTrace();
         }
     }
 
+    // Method to list all fonts registered in the JVM
+    public static void listAvailableFonts() {
+        GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
+        String[] fontNames = ge.getAvailableFontFamilyNames();
+        System.out.println("Available fonts on this JVM:");
+        for (String fontName : fontNames) {
+            System.out.println(fontName);
+        }
+    }
 }

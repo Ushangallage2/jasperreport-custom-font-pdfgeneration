@@ -8,4 +8,24 @@
 		<pdfEmbedded><![CDATA[true]]></pdfEmbedded>
 		<exportFonts/>
 	</fontFamily>
+	<fontFamily name="Tacteing">
+		<normal><![CDATA[fonts/Tacteing/Tacteing.ttf]]></normal>
+		<pdfEmbedded><![CDATA[true]]></pdfEmbedded>
+		<exportFonts/>
+	</fontFamily>
+	<fontFamily name="Roboto">
+		<normal><![CDATA[fonts/Roboto/Roboto-italic.ttf]]></normal>
+		<pdfEmbedded><![CDATA[true]]></pdfEmbedded>
+		<exportFonts/>
+	</fontFamily>
+	<fontFamily name="openSans">
+		<normal><![CDATA[fonts/openSans/openSans.ttf]]></normal>
+		<pdfEmbedded><![CDATA[true]]></pdfEmbedded>
+		<exportFonts/>
+	</fontFamily>
+	<fontFamily name="Sinhala">
+		<normal><![CDATA[fonts/sinhala/sinhala.ttf]]></normal>
+		<pdfEmbedded><![CDATA[true]]></pdfEmbedded>
+		<exportFonts/>
+	</fontFamily>
 </fontFamilies>

@@ -12,23 +12,23 @@
 			<staticText>
 				<reportElement x="127" y="30" width="100" height="30" uuid="a4cf64e9-d6c3-4ce9-9039-79800533550a"/>
 				<textElement textAlignment="Left" verticalAlignment="Middle" markup="html">
-					<font fontName="Calibri" size="11.5"/>
+					<font fontName="openSans" size="11.5"/>
 				</textElement>
-				<text><![CDATA[Calibri - Regular]]></text>
+				<text><![CDATA[openSans]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="337" y="30" width="100" height="30" uuid="ea00d75c-4bc9-44cd-9385-45f9f5dacaf0"/>
 				<textElement textAlignment="Left" verticalAlignment="Middle" markup="html">
-					<font fontName="Calibri" size="11.5" isBold="true"/>
+					<font fontName="Sinhala" size="11.5" isBold="true"/>
 				</textElement>
-				<text><![CDATA[Calibri - Bold]]></text>
+				<text><![CDATA[sinhala]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="127" y="70" width="100" height="30" uuid="52ca47a2-6c40-4163-a3b2-26098001a2d4"/>
 				<textElement textAlignment="Left" verticalAlignment="Middle" markup="html">
-					<font fontName="Calibri" size="11.5" isItalic="true"/>
+					<font fontName="Roboto" size="11.5" isItalic="true"/>
 				</textElement>
-				<text><![CDATA[Calibri - Italic]]></text>
+				<text><![CDATA[Roboto - Italic]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="337" y="70" width="100" height="30" uuid="fb69e717-6483-4039-a012-4e3d6cd1404c"/>
